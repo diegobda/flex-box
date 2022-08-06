@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 800px;
+
+
+        }
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            width: 10%;
+            line-height: 50px;
+            min-width: 60px;
+
+
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .blue{
+            background-color:blue;
+
+        }
+        .green{
+            background-color:green;
+            
+        }
+        .orange{
+            background-color:orange;
+            
+        }
+        .red{
+            background-color:red;
+            
+        }
+        .rosa{
+            background-color:rgb(212, 16, 199);
+            
+        }
+        .wap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+<body>
+    <h1>no wrap</h1>
+
+    <div class="flex-container nowrap">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item rosa">4</div>
+        <div class="item red">5</div>
+        <div class="item green">6</div>
+        <div class="item blue">7</div>
+        <div class="item orange">8</div>
+        <div class="item rosa">9</div>
+        <div class="item red">10</div>      
+        <div class="item blue">11</div>
+        <div class="item orange">12</div>
+        <div class="item rosa">13</div>
+        <div class="item red">14</div>
+    </div>
+    <h1>Wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item rosa">4</div>
+        <div class="item red">5</div>
+        <div class="item green">6</div>
+        <div class="item blue">7</div>
+        <div class="item orange">8</div>
+        <div class="item rosa">9</div>
+        <div class="item red">10</div>      
+        <div class="item blue">11</div>
+        <div class="item orange">12</div>
+        <div class="item rosa">13</div>
+        <div class="item red">14</div>
+        
+    </div>
+    <h1>Wrap wap-reverse</h1>
+    <div class="flex-container wap-reverse">
+        <div class="item green">0</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item rosa">4</div>
+        <div class="item red">5</div>
+        <div class="item green">6</div>
+        <div class="item blue">7</div>
+        <div class="item orange">8</div>
+        <div class="item rosa">9</div>
+        <div class="item red">10</div>      
+        <div class="item blue">11</div>
+        <div class="item orange">12</div>
+        <div class="item rosa">13</div>
+        <div class="item red">14</div>
+        
+    </div>
+
+</body>
+
+</html>
