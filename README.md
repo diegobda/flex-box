@@ -8,6 +8,7 @@
 Tecnologias usadas
 
 * css/ vscode*
+os códigos estão na Branch master coloquei divido para lembrar os conceitos de branchs
 
 <u>Vesion 0.1.0</u>
 
