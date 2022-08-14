@@ -1,0 +1,133 @@
+<!--Tipo de alinhamento
+center = aalinhamento dos itens ao centro
+stretch = é o padrao e os flez itens crecem igualmente
+flex-start = alinhamento dos itens ao inicio
+flex-end = alinhamento dos itens ao final
+space-between = cria um espaçamento igual entre os elementos
+maiores que o inicial e final
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+</head>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1px;
+            text-align: center;
+            color: white;
+
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+
+    </div>
+    
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+
+    </div>
+
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+
+    </div>
+
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+
+    </div>
+
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+        <div class="item">Loren inpulso is therefore always</div>
+
+    </div>
+</body>
+</html>

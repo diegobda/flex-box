@@ -1,0 +1,77 @@
+<!--E a propriedade  que estabele o tamanho inicial
+Auto: caso o item nao tenha tamanho, esse sera proporcional ao conteudo do item
+px, %, em, ...: sao valores exatos-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+</head>
+    <style>
+        .flex-container {
+            max-width: 300px;
+            border: 1px solid rgb(217, 28, 28);
+            display: flex;
+        }
+
+        .items {
+            background-color: coral;
+            border: white;
+            text-align: center;
+            margin: 5px;
+
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+        .b-0 {
+            flex-basis: 0;
+        }
+        .w100{
+            flex-basis: 100px;
+        } 
+    </style>
+<body>
+    <!-- faz a distribuiçao de espaços conforme o tamanho-->
+    <p>auto</p>
+    <div class="flex-container">
+        <div class="items bauto fg-1">A</div>
+        <div class="items bauto fg-1">Bbbb</div>
+        <div class="items bauto fg-1">Def</div>
+        <div class="items bauto fg-2 ">cc</div>
+
+    </div>
+
+    <p>0(zero)</p>
+    <div class="flex-container">
+        <div class="items b-0 fg-1">Aaaaaaaaaaaaaaaaa</div>
+        <div class="items b-0 fg-1">Bbbb</div>
+        <div class="items b-0 fg-1">Def</div>
+        <div class="items b-0 fg-1 ">ccccccccc</div>
+
+    </div>
+
+    <p>basis + with</p>
+    <div class="flex-container">
+        <div class="items w100 fg-2">AA</div>
+        <div class="items w100 fg-2">BB</div>
+        <div class="items w100 fg-2">DD</div>
+        <div class="items w100 fg-2"></div></div>
+
+    </div
+    
+</body>
+</html>
